@@ -1,0 +1,9 @@
+This is the config for every important value Bert uses. We do not recommend editing this unless
+you know what you are doing, as changing one value could make or break your trading performance.
+All parameters (read: settings) are labeled with an explanation as well as what values will break
+the bot when used. This is not an exhaustive list, just what we have tested.
+
+BASIC TRADE PARAMETERS
+Trade-Frequency: 60
+ - The interval of time, in seconds, between trade events. You can think of this as how often the bot trades.
+   Lower number = faster trading.
