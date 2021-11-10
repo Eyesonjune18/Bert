@@ -1,4 +1,4 @@
-package BertAlternate;
+package BertAlternate.CLI;
 
 public interface Command {
 

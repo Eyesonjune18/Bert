@@ -1,6 +1,6 @@
-package BertAlternate;
+package BertAlternate.CLI;
 
-import BertAlternate.Commands.*;
+import BertAlternate.CLI.Commands.*;
 
 public class CommandFactory {
 

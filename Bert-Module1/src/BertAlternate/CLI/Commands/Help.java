@@ -1,6 +1,6 @@
-package BertAlternate.Commands;
+package BertAlternate.CLI.Commands;
 
-import BertAlternate.Command;
+import BertAlternate.CLI.Command;
 
 public class Help implements Command {
 
