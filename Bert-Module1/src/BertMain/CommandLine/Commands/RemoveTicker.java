@@ -1,6 +1,6 @@
-package BertAlternate.CLI.Commands;
+package BertMain.CommandLine.Commands;
 
-import BertAlternate.CLI.Command;
+import BertMain.CommandLine.Command;
 
 public class RemoveTicker implements Command {
 

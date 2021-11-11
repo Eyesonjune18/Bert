@@ -1,4 +1,4 @@
-package BertAlternate.CLI;
+package BertMain.CommandLine;
 
 public interface Command {
 

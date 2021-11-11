@@ -1,6 +1,6 @@
-package BertAlternate.CLI.Commands;
+package BertMain.CommandLine.Commands;
 
-import BertAlternate.CLI.Command;
+import BertMain.CommandLine.Command;
 
 public class Help implements Command {
 
@@ -24,7 +24,7 @@ public class Help implements Command {
                  - Removes a ticker from the watchlist
                 list-tickers
                  - Lists the tickers that are currently on the watchlist
-                watchlist
+                show-watchlist
                  - Shows the current watchlist and general info about each stock
                 buy <ticker> <amount>
                  - Manually buys a certain amount of a stock, assuming sufficient funds
@@ -36,8 +36,12 @@ public class Help implements Command {
                  - Pauses all automatic trading
                 unpause
                  - Unpauses automatic trading
+                start
+                 - Starts the bot using the most recently saved config file
+                load <filename.txt>
+                 - Starts the bot using the specified config file
                 stop
-                 - Stops the program completely and saves the current configuration to a file
+                 - Stops the bot completely and saves the current configuration to a file
                 verbose [on/off]
                  - Toggles verbose logging of trading and evaluation events
                 enable-logging

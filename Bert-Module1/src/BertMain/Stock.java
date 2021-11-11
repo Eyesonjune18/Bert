@@ -3,36 +3,53 @@ package BertMain;
 public class Stock {
 
     private final String ticker;
-    private final int amount;
-    private int currentBuyPrice;
-    private int currentSellPrice;
-    private final int originalBuyPrice;
-    private final int originalSellPrice;
-    private int currentEvaluation;
-    private int originalEvaluation;
+    private final String fullName;
+    private double buyPrice;
+    private double sellPrice;
 
-    public Stock(String ticker, int amount, int originalEvaluation) {
+    public Stock(String ticker) {
 
+        PrivateAPI.checkIfValidStock(ticker);
         this.ticker = ticker;
-        this.amount = amount;
-        this.originalBuyPrice = PrivateAPI.getBuyPrice(ticker, amount);
-        this.originalSellPrice = PrivateAPI.getSellPrice(ticker, amount);
-        this.currentBuyPrice = originalBuyPrice;
-        this.currentSellPrice = originalSellPrice;
-        this.originalEvaluation = originalEvaluation;
-        this.currentEvaluation = originalEvaluation;
+        fullName = PrivateAPI.resolveFullName(ticker);
+        buyPrice = PrivateAPI.resolveBuyPrice(ticker);
+        sellPrice = PrivateAPI.resolveSellPrice(ticker);
 
     }
 
-    public void buy() {
+    public String getTicker() {
 
-
+        return ticker;
 
     }
 
-    public void sell() {
+    public String getFullName() {
 
+        return fullName;
 
+    }
+
+    public double getBuyPrice() {
+
+        return buyPrice;
+
+    }
+
+    public double getSellPrice() {
+
+        return sellPrice;
+
+    }
+
+    public void setBuyPrice(double buyPrice) {
+
+        this.buyPrice = buyPrice;
+
+    }
+
+    public void setSellPrice(double sellPrice) {
+
+        this.sellPrice = sellPrice;
 
     }
 
